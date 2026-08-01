@@ -1,0 +1,317 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x77A10AE3E513c2D73D73eb52212c6918C8830dd0",
+      "txHash": "0x28fbf6e1cc02e54159fcd49bcc3d8331f649483cc59b3fc0fdfd7849c6724de0",
+      "kind": "uups"
+    },
+    {
+      "address": "0xC88F4dF2B6EdDd6B6Bdf95A0177f50C90Fa7527f",
+      "txHash": "0x47c043b525b06fae9a29db530e1efaef720109084a467f7908474785ddc09139",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "d30bc8998ab6cb29ec2d1d118ec7804c45e38e857ad7858a4cc474b5dde8f1be": {
+      "address": "0xEC5266c9e44631e1ba22FD6377C38130c1F3B738",
+      "txHash": "0x98aa7ef864cf9bfa8879c96794e446e49c87d553b20a43ccca9cd56c273216db",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "filledSubtrees",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_uint256,t_bytes32)",
+            "contract": "MerkleTreeWithHistory",
+            "src": "contracts/MerkleTreeWithHistory.sol:22"
+          },
+          {
+            "label": "roots",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_bytes32)",
+            "contract": "MerkleTreeWithHistory",
+            "src": "contracts/MerkleTreeWithHistory.sol:23"
+          },
+          {
+            "label": "currentRootIndex",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint32",
+            "contract": "MerkleTreeWithHistory",
+            "src": "contracts/MerkleTreeWithHistory.sol:25"
+          },
+          {
+            "label": "nextIndex",
+            "offset": 4,
+            "slot": "2",
+            "type": "t_uint32",
+            "contract": "MerkleTreeWithHistory",
+            "src": "contracts/MerkleTreeWithHistory.sol:26"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_array(t_uint256)47_storage",
+            "contract": "MerkleTreeWithHistory",
+            "src": "contracts/MerkleTreeWithHistory.sol:149"
+          },
+          {
+            "label": "admin",
+            "offset": 0,
+            "slot": "50",
+            "type": "t_address",
+            "contract": "EtherPool",
+            "src": "contracts/EtherPool.sol:18"
+          },
+          {
+            "label": "pendingAdmin",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "EtherPool",
+            "src": "contracts/EtherPool.sol:19"
+          },
+          {
+            "label": "maximumDepositAmount",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_uint256",
+            "contract": "EtherPool",
+            "src": "contracts/EtherPool.sol:21"
+          },
+          {
+            "label": "minimumAmount",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "EtherPool",
+            "src": "contracts/EtherPool.sol:22"
+          },
+          {
+            "label": "nullifierHashes",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "contract": "EtherPool",
+            "src": "contracts/EtherPool.sol:23"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)47_storage": {
+            "label": "uint256[47]",
+            "numberOfBytes": "1504"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bytes32)": {
+            "label": "mapping(uint256 => bytes32)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint64": {
+            "label": "uint64"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:69"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:73"
+            }
+          ]
+        }
+      }
+    },
+    "ba111faa78a6060e79d3781d06f4af18b1d587bc29bb53ab4bdd98085c712829": {
+      "address": "0x803db1b37e3bb94d65e42F3dC886614587583958",
+      "txHash": "0xce948ecaefd33e3743bb810b086700d6d9b53b419b3c4eb83929edeb770d50e8",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "filledSubtrees",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_uint256,t_bytes32)",
+            "contract": "MerkleTreeWithHistory",
+            "src": "contracts/MerkleTreeWithHistory.sol:22"
+          },
+          {
+            "label": "roots",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_bytes32)",
+            "contract": "MerkleTreeWithHistory",
+            "src": "contracts/MerkleTreeWithHistory.sol:23"
+          },
+          {
+            "label": "currentRootIndex",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint32",
+            "contract": "MerkleTreeWithHistory",
+            "src": "contracts/MerkleTreeWithHistory.sol:25"
+          },
+          {
+            "label": "nextIndex",
+            "offset": 4,
+            "slot": "2",
+            "type": "t_uint32",
+            "contract": "MerkleTreeWithHistory",
+            "src": "contracts/MerkleTreeWithHistory.sol:26"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_array(t_uint256)47_storage",
+            "contract": "MerkleTreeWithHistory",
+            "src": "contracts/MerkleTreeWithHistory.sol:149"
+          },
+          {
+            "label": "admin",
+            "offset": 0,
+            "slot": "50",
+            "type": "t_address",
+            "contract": "ERCPool",
+            "src": "contracts/ERCPool.sol:23"
+          },
+          {
+            "label": "pendingAdmin",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "ERCPool",
+            "src": "contracts/ERCPool.sol:24"
+          },
+          {
+            "label": "maximumDepositAmount",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_uint256",
+            "contract": "ERCPool",
+            "src": "contracts/ERCPool.sol:26"
+          },
+          {
+            "label": "minimumAmount",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERCPool",
+            "src": "contracts/ERCPool.sol:27"
+          },
+          {
+            "label": "nullifierHashes",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "contract": "ERCPool",
+            "src": "contracts/ERCPool.sol:28"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)47_storage": {
+            "label": "uint256[47]",
+            "numberOfBytes": "1504"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bytes32)": {
+            "label": "mapping(uint256 => bytes32)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint64": {
+            "label": "uint64"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:69"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:73"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
