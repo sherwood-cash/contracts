@@ -67,4 +67,4 @@ logic, allowlists the configured routers and writes the resulting addresses to
 
 | Contract | Network | Address |
 |---|---|---|
-| WZEC (proxy) | Robinhood | _not yet deployed_ |
+| WZEC (proxy) | Robinhood | `0xf740b7B89C19E3EF6A1963D673C5F2B4B47D7919` |
